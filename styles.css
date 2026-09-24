@@ -6,7 +6,7 @@
 }
 
 .about-team{
-    color:rgb(82, 81, 81)
+    color:rgb(30, 0, 0)
 }
 
 .authors{
@@ -14,11 +14,15 @@
 }
 
 .body{
-    background-color: rgb(90, 92, 92);
+    background-color: rgb(148, 122, 126);
 }
 
 .chartjs-sample{
     background-color: #b08794;
+}
+
+.container {
+    font-family: "Red Hat Mono", monospace;
 }
 
 .footer{                
@@ -27,6 +31,11 @@
 
 .icon-white{            /* Arrow icon at bottom of page */
     color: #FFFFFF;
+}
+
+.credits {
+    font-family: "Instrument Serif", "Trirong", Cambria, Cochin, Georgia;
+    font-size: 30px;
 }
 
 .nav-background-color{   /* navbar background color */
@@ -39,6 +48,10 @@
     margin-right: 10px;
 }
 
+.new-font{
+    font-family: "Red Hat Mono", monospace;
+    font-weight: 200;
+}
 .overview{
     background-color: #d3bbbc;
 }
@@ -75,6 +88,14 @@ p {
     font-family:'Courier New', Courier, monospace;
 }
 
+.minimize {
+    font-size: 20px;
+}
+
+.nav-itm {
+    font-family: "Instrument Serif", "Trirong", Cambria, Cochin, Georgia;
+    font-size: 30px;
+}
 
 /* ----------------- ID CSS ----------------- */
 
