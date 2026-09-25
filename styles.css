@@ -21,9 +21,6 @@
     background-color: #b08794;
 }
 
-.container {
-    font-family: "Instrument Serif", "Montserrat", Cambria, monospace;
-}
 
 .footer{                
     background-color: #ae8b90;
@@ -51,6 +48,7 @@
 .new-font{
     font-family: "Montserrat", monospace;
     font-weight:400;
+    list-style-type:circle;
 }
 .overview{
     background-color: #d3bbbc;
@@ -101,11 +99,15 @@ p {
 }
 
 .hero-image {
-    background-image: url("img/image.png");
+    background-image: linear-gradient(45deg, rgba(255, 174, 190, 0.731), rgba(241, 170, 170, 0.279), rgba(123, 61, 77, 0.648)), url("img/image.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+}
+
+::selection {
+    background: rgba(226, 138, 176, 0.75);
 }
 
 /* ----------------- ID CSS ----------------- */
@@ -115,7 +117,7 @@ p {
     margin: auto;
     padding: 10px; 
     min-height: 400px;
-    background-color: whitesmoke !important;
+    background-color: rgb(255, 223, 233) !important;
     justify-content: center;
     align-items: center;  
 }
