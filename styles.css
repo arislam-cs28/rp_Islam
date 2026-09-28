@@ -1,149 +1,196 @@
 /* ---------------------------------- Class CSS ---------------------------------- */
 
-.about{
-    width:400px;
-    margin: auto;
+.about {
+  width: 90%;
+  margin: auto;
 }
 
-.about-team{
-    color:rgb(30, 0, 0)
+.about-team {
+  color: rgb(30, 0, 0);
 }
 
-.authors{
-    background-color: #d3bbbc;
+.authors {
+  background-color: #d3bbbc;
 }
 
-.body{
-    background-color: rgb(148, 122, 126);
+.body {
+  background-color: rgb(155, 142, 144);
+  background-image:
+    linear-gradient(
+      rgba(51, 1, 1, 0.5),
+      rgba(186, 121, 121, 0.5),
+      rgba(255, 189, 189, 0.5)
+    ),
+    url("img/background.png");
 }
 
-.chartjs-sample{
-    background-color: #b08794;
+.chartjs-sample {
+  background-color: #b08794;
 }
 
-
-.footer{                
-    background-color: #ae8b90;
+.footer {
+  background-color: #ae8b90;
 }
 
-.icon-white{            /* Arrow icon at bottom of page */
-    color: #FFFFFF;
+.icon-white {
+  /* Arrow icon at bottom of page */
+  color: #ffffff;
+}
+
+.card {
+    box-shadow: 0px 3px 5px #743e3e;
+    background-color:#eae6e6;
+}
+
+.card:hover {
+    transform: scale(1.025);
+    box-shadow: 0px 6px 10px #744343;
+    transition: all 1s ease-in-out;
+}
+
+.howTo h3 {
+    font-family: "Instrument Serif", "Trirong", Cambria, Cochin, Georgia;
+}
+
+.howTo li {
+    font-family: "Montserrat", monospace;
+    font-size: 13px;
+    text-align: left;
 }
 
 .credits {
-    font-family: "Instrument Serif", "Trirong", Cambria, Cochin, Georgia;
-    font-size: 30px;
+  font-family: "Instrument Serif", "Trirong", Cambria, Cochin, Georgia;
+  font-size: 30px;
 }
 
-.nav-background-color{   /* navbar background color */
-    background-color: #744545;
+.nav-background-color {
+  /* navbar background color */
+  background-color: #744545;
 }
 
-.nav-menu-item{               /* navbar link text properties */
-    font-size:25px;
-    margin-left: 10px;
-    margin-right: 10px;
+.nav-menu-item {
+  /* navbar link text properties */
+  font-size: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
-.new-font{
-    font-family: "Montserrat", monospace;
-    font-weight:400;
-    list-style-type:circle;
-}
-.overview{
-    background-color: #d3bbbc;
+.colored-back th {
+    background-color: #ffc9c9;
 }
 
-.overview-left-padding{
-    padding-left: 20px;
+.name {
+  font-family: "Instrument Serif", "Trirong", Cambria, Cochin, Georgia;
 }
 
-.overview-right-padding{  
-    padding-right: 20px;
+.new-font {
+  font-family: "Montserrat", monospace;
+  font-weight: 400;
+  list-style-type: circle;
+}
+.overview {
+  background-color: #d3bbbc;
 }
 
-.procedure{
-    background-color: #d3bbbc;
-    padding: 1px;
+.overview-left-padding {
+  padding-left: 20px;
 }
 
-.showcase{
-    background-color: #d3bbbc; /*#0096c7*/
+.overview-right-padding {
+  padding-right: 20px;
 }
 
-h1 {
-    font-family: "Trirong", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: bold;
+.procedure {
+  background-color: #d3bbbc;
+  padding: 1px;
+}
+
+.showcase {
+  background-color: #d3bbbc; /*#0096c7*/
+}
+
+h1,
+.card-headings {
+  font-family:
+    "Trirong", Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
 }
 
 h1.display-4 {
-    font-family: "Trirong", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: bold;
-    color: #1a0000;
-    text-shadow: 0px 0px 10px #ffc9c9;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+  font-family:
+    "Trirong", Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
+  color: #1a0000;
+  text-shadow: 0px 0px 10px #ffc9c9;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
+
 p {
-    font-family:'Montserrat', Courier, monospace;
+  font-family: "Montserrat", Courier, monospace;
 }
 
 .minimize {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .nav-itm {
-    font-family: "Instrument Serif", "Trirong", Cambria, Cochin, Georgia;
-    font-size: 30px;
+  font-family: "Instrument Serif", "Trirong", Cambria, Cochin, Georgia;
+  font-size: 30px;
 }
 
 .hero-image {
-    background-image: linear-gradient(45deg, rgba(255, 174, 190, 0.731), rgba(241, 170, 170, 0.279), rgba(123, 61, 77, 0.648)), url("img/image.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
+  background-image:
+    linear-gradient(
+      45deg,
+      rgba(255, 174, 190, 0.731),
+      rgba(241, 170, 170, 0.279),
+      rgba(123, 61, 77, 0.648)
+    ),
+    url("img/image.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
 }
 
 ::selection {
-    background: rgba(226, 138, 176, 0.75);
+  background: rgba(226, 138, 176, 0.75);
 }
 
 /* ----------------- ID CSS ----------------- */
 
 /* -----------------Underline Animation CSS -----------------*/
-#chart-wrapper{
-    margin: auto;
-    padding: 10px; 
-    min-height: 400px;
-    background-color: rgb(255, 223, 233) !important;
-    justify-content: center;
-    align-items: center;  
+#chart-wrapper {
+  margin: auto;
+  padding: 10px;
+  min-height: 400px;
+  background-color: rgb(255, 223, 233) !important;
+  justify-content: center;
+  align-items: center;
 }
-
-
 
 .hover-underline-animation {
-    display: inline-block;
-    position: relative;
-    /*color: #0087ca;*/
-  }
-  
-.hover-underline-animation:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #eae6e6;
-    /*transform-origin: bottom right;*/
-    transition: transform 0.35s ease-out;
+  display: inline-block;
+  position: relative;
+  /*color: #0087ca;*/
 }
-  
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #eae6e6;
+  /*transform-origin: bottom right;*/
+  transition: transform 0.35s ease-out;
+}
+
 .hover-underline-animation:hover:after {
-    transform: scaleX(1);
-    /*transform-origin: bottom left;*/
+  transform: scaleX(1);
+  /*transform-origin: bottom left;*/
 }

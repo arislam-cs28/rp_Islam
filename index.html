@@ -1,149 +1,216 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Activity 2.1.5 Class Demo</title>
 
     <!--CSS Links-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="img/ovary.png">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Trirong"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="img/ovary.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
     <!--JavaScript Links-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
-</head>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body class="body">
+  <body class="body">
     <div class="container-lg min-vh-100">
-        <header>
-            <!--Navigation Bar-->
-            <nav class="navbar navbar-expand-lg nav-background-color" data-bs-theme="dark">
-                <div class="container">
-                    <a href="#" class="navbar-brand"> <!-- Website Brand -->
-                        <img src="img/ovary.png" alt="Ovary logo" class="d-inline-block align-text-top w-50">
-                    </a>
+      <header>
+        <!--Navigation Bar-->
+        <nav
+          class="navbar navbar-expand-lg nav-background-color"
+          data-bs-theme="dark"
+        >
+          <div class="container">
+            <a href="#" class="navbar-brand">
+              <!-- Website Brand -->
+              <img
+                src="img/ovary.png"
+                alt="Ovary logo"
+                class="d-inline-block align-text-top w-50"
+              />
+            </a>
 
-                    <!--Hamburger Menu Button-->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+            <!--Hamburger Menu Button-->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navmenu"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
-                    <!-- Collapsible Navbar menu with custom hover underline CSS animation -->
-                    <div class="collapse navbar-collapse" id="navmenu"> <!--Links to hamburger menu-->
-                        <ul class="navbar-nav ms-auto"> <!--ms-auto provides automatic margin spacing-->
-                            <li class="nav-itm">
-                                <a href="authors.html" class="nav-link hover-underline-animation new">Authors</a>
-                            </li>
-                            <li class="nav-itm">
-                                <a href="procedure.html" class="nav-link hover-underline-animation">Procedure</a>
-                            </li>
-                            <li class="nav-itm">
-                                <a href="results.html" class="nav-link hover-underline-animation">Results</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
-
-        <!--Showcase-->
-        <section class="showcase text-dark p-2 text-center hero-image">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-0 p-0 d-flex align-items-center">
-                        <div class="container" style="margin: 30px">
-                            <h1 class="display-4">The Effects of Polyethylene Terephthalate and Polyvinyl Chloride
-                                Consumption on the Fecundity of <em>Drosophila Melanogaster</em> with PCOS Symptom
-                                Exhibition</h1>
-                            <!--display-4 will make the <h1> tag stand out-->
-                            <h2 class="name" style="text-shadow: 0px 0px 10px #ffc9c9;"><strong>Arisha Islam, High Technology High School</strong></h2>
-                        </div>
-                    </div>
-                </div>
+            <!-- Collapsible Navbar menu with custom hover underline CSS animation -->
+            <div class="collapse navbar-collapse" id="navmenu">
+              <!--Links to hamburger menu-->
+              <ul class="navbar-nav ms-auto">
+                <!--ms-auto provides automatic margin spacing-->
+                <li class="nav-itm">
+                  <a
+                    href="authors.html"
+                    class="nav-link hover-underline-animation new"
+                    >Authors</a
+                  >
+                </li>
+                <li class="nav-itm">
+                  <a
+                    href="procedure.html"
+                    class="nav-link hover-underline-animation"
+                    >Procedure</a
+                  >
+                </li>
+                <li class="nav-itm">
+                  <a
+                    href="results.html"
+                    class="nav-link hover-underline-animation"
+                    >Results</a
+                  >
+                </li>
+              </ul>
             </div>
-        </section>
+          </div>
+        </nav>
+      </header>
 
-        <section class="overview text-dark p-2 text-left"> <!--Overview-->
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-4 p-3">
-                        <img src="img/19418.jpeg" alt="Water Temperature Graph" class="img-fluid">
-                    </div>
-                    <div class="col-sm-8 p-3">
-                        <h1 class="overview-left-padding">Background</h1>
-                        <!--overview-left-padding - custom padding left side-->
-                        <p class="lead overview-font overview-left-padding new-font">
-                            Phthalates are plasticizers and endocrine-disrupting chemicals characterized by
-                            interference with metabolic pathways and hormonal dysfunction. Polyvinyl chloride (PVC) is
-                            one of the most widespread
-                            phthalate-containing plastics. Polyethylene terephthalate (PET) does not contain
-                            plasticizers but shows negative effects within male reproductive health. Few studies have
-                            been conducted regarding their effects patients with polycystic-ovarian syndrome (PCOS): a
-                            disorder
-                            affecting 6-15% of reproductive-aged females. Studying effects within a model
-                            organism—<em>Drosophila melanogaster</em>, possessing similar reproductive structures to
-                            humans—would offer further insight into potential effects of PET and PVC on PCOS.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-sm-8 p-3">
-                        <h1 class="overview-left-padding">Rationale</h1>
-                        <!--overview-left-padding - custom padding left side-->
-                        <ul class="lead overview-font overview-right-padding new-font">
-                            <li>Phthalates are historically known for causing disruptions in the metabolic system and
-                                various hormonal disorders.</li>
-                            <li>Endocrine </li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-4 p-3">
-                        <img src="img/watermap.jpg" alt="Water Map" class="img-fluid">
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-sm-4 p-3">
-                        <img src="img/phytoplankton-pnas.jpg" alt="Phytoplankton" class="img-fluid">
-                    </div>
-                    <div class="col-sm-8 p-3">
-                        <h1 class="overview-left-padding">Background</h1>
-                        <!--overview-left-padding - custom padding left side-->
-                        <p class="lead overview-font overview-left-padding">
-                            Lorem ipsum dolor sit amet consectetur adipiscing elit id minim id deserunt laboris
-                            omnis est minim minim officia adipiscing est voluptas deserunt labore culpa distinctio
-                            dolore excepteur imperdiet est est voluptatum proident officia dolor quibusdam veniam
-                            occaecat quo distinctio sunt quidem rerum nostrud in sint fuga cum fugiat sunt ipsum.
-                        </p>
-                    </div>
-                </div>
+      <!--Showcase-->
+      <section class="showcase text-dark p-2 text-center hero-image">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-0 p-0 d-flex align-items-center">
+              <div class="container" style="margin: 30px">
+                <h1 class="display-4">
+                  The Effects of Polyethylene Terephthalate and Polyvinyl
+                  Chloride Consumption on the Fecundity of
+                  <em>Drosophila Melanogaster</em> with PCOS Symptom Exhibition
+                </h1>
+                <!--display-4 will make the <h1> tag stand out-->
+                <h2 class="name" style="text-shadow: 0px 0px 10px #ff9797">
+                  <strong>Arisha Islam, High Technology High School</strong>
+                </h2>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!--Footer-->
-        <footer class="p-5 footer text-light text-center position-relative">
-            <div class="container">
-                <p class="lead credits">Copyright &copy; Research Practicum and Software Engineering, 2026</p>
-                <a href="#" class="position-absolute bottom-0 end-0 p-5">
-                    <i class="bi bi-arrow-up-circle h2 icon-white"></i>
-                </a>
+      <section class="overview text-dark p-2 text-left">
+        <!--Overview-->
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4 p-3">
+              <img
+                src="img/dissection.png"
+                alt="Dissection of a Drosophila Sample"
+                class="img-fluid"
+              />
             </div>
-        </footer>
+            <div class="col-sm-8 p-3">
+              <h1 class="overview-left-padding">Background</h1>
+              <!--overview-left-padding - custom padding left side-->
+              <p class="lead overview-font overview-left-padding new-font">
+                Phthalates are plasticizers and endocrine-disrupting chemicals
+                characterized by hormonal dysfunction. Polyvinyl chloride (PVC)
+                is one of the most widespread phthalate-containing plastics.
+                Polyethylene terephthalate (PET) does not contain plasticizers
+                but shows negative effects within male reproductive health;
+                however, very few studies have been conducted regarding its
+                effects on patients with polycystic-ovarian syndrome (PCOS): a
+                hormonal disorder affecting 6-15% of reproductive-aged females.
+                An accurate comparison of PET and PVC <em>in vivo</em> is
+                necessary to observe the possible ovarian detriments their
+                consumption.
+              </p>
+            </div>
+          </div>
 
+          <div class="row">
+            <div class="col-sm-8 p-3">
+              <h1 class="overview-left-padding">Rationale</h1>
+              <!--overview-left-padding - custom padding left side-->
+              <p class="lead overview-font overview-right-padding new-font">
+                As classic phthalates are historically known for causing
+                endocrine disruptions and PET / terephthalate-plastics are used
+                as their replacements, there may have been a correlation in how
+                they affected the endocrine system.
+                <em>Drosophila melanogaster</em> was chosen as a model organism
+                due to how similar its reproductive structures are to that of
+                humans, with somatic and germline stem cells. There is a
+                research gap as well, in our understanding of women with PCOS:
+                this includes how their disorder comes to be, how it may carry
+                through generations, and how epigenetics may influence it. This
+                experiment explored the intersection of these fields.
+              </p>
+            </div>
+            <div class="col-sm-4 p-3">
+              <img src="img/microscope.png" alt="Ovaries under a microscope with scale" class="img-fluid" />
+            </div>
+          </div>
 
+          <div class="row">
+            <div class="col-sm-4 p-3">
+              <img
+                src="img/future.png"
+                alt="Diagram of ovarian cells in non-PCOS  vs PCOS models"
+                class="img-fluid"
+              />
+            </div>
+            <div class="col-sm-8 p-3">
+              <h1 class="overview-left-padding">Future Implications</h1>
+              <!--overview-left-padding - custom padding left side-->
+              <p class="lead overview-font overview-left-padding new-font">
+                The results showed that a novel method of exhibiting PCOS in a
+                non-mammalian model organism was attainable with testosterone
+                administration to cause follicular arrest. The presence of both
+                PVC and PET also caused noticeable follicular arrest,
+                determining that they were detrimental. A future study may
+                choose to increase sample count; count ovarioles; or even use
+                dihydrotestosterone. A new project may also look at ecdysone,
+                DILPs, and germline stem cells to determine levels of insulin
+                resistance.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Footer-->
+      <footer class="p-5 footer text-light text-center position-relative">
+        <div class="container">
+          <p class="lead credits">
+            Copyright &copy; Research Practicum and Software Engineering, 2026
+          </p>
+          <a href="#" class="position-absolute bottom-0 end-0 p-5">
+            <i class="bi bi-arrow-up-circle h2 icon-white"></i>
+          </a>
+        </div>
+      </footer>
     </div>
-
-</body>
-
+  </body>
 </html>

@@ -1,134 +1,283 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Activity 2.1.5 Class Demo</title>
 
     <!--CSS Links-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Trirong"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="icon" type="image/x-icon" href="img/ovary.png">
+    <link rel="icon" type="image/x-icon" href="img/ovary.png" />
 
     <!--JavaScript Links-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
-</head>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body class="body">
+  <body class="body">
     <div class="container-lg min-vh-100">
-        <header>
-            <!--Navigation Bar-->
-            <nav class="navbar navbar-expand-lg nav-background-color" data-bs-theme="dark">
-                <div class="container">
-                    <a href="index.html" class="navbar-brand"> <!-- Website Brand -->
-                        <img src="img/ovary.png" alt="Ovary logo" class="d-inline-block align-text-top w-50">
-                    </a>
+      <header>
+        <!--Navigation Bar-->
+        <nav
+          class="navbar navbar-expand-lg nav-background-color"
+          data-bs-theme="dark"
+        >
+          <div class="container">
+            <a href="index.html" class="navbar-brand">
+              <!-- Website Brand -->
+              <img
+                src="img/ovary.png"
+                alt="Ovary logo"
+                class="d-inline-block align-text-top w-50"
+              />
+            </a>
 
-                    <!--Hamburger Menu Button-->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+            <!--Hamburger Menu Button-->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navmenu"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
-                    <!-- Collapsible Navbar menu with custom hover underline CSS animation -->
-                    <div class="collapse navbar-collapse" id="navmenu"> <!--Links to hamburger menu-->
-                        <ul class="navbar-nav ms-auto"> <!--ms-auto provides automatic margin spacing-->
-                            <li class="nav-itm">
-                                <a href="authors.html" class="nav-link hover-underline-animation">Authors</a>
-                            </li>
-                            <li class="nav-itm">
-                                <a href="procedure.html" class="nav-link hover-underline-animation">Procedure</a>
-                            </li>
-                            <li class="nav-itm">
-                                <a href="results.html" class="nav-link hover-underline-animation">Results</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
-
-        <!--About the team-->
-        <section class="authors">
-            <div class="container">
-                <br> <!--Line break-->
-                <h1 class="text-center about-team">About the Team</h1>
-                <p class="text-center"><em>Contributors to the experiment.</em></p>
-                <hr><br> <!--Horizontal and vertical line break-->
-
-                <!--Cards organized in a 2x2 table format-->
-                <div class="row rows-cols-1 rows-cols-md-2 g-4">
-                    <div class="col">
-                        <div class="card about">
-                            <img src="img/woman1.jpg" alt="Name 1" class="card-img-top">
-                            <div class="card-body">
-                                <h4 class="card-title">Arisha Islam</h4>
-                                <h5>Class: Software Engineering</h5>
-                                <p class="card-text ">Describe (in detail) the contributions that were made to the
-                                    project.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card about">
-                            <img src="img/man1.png" alt="Name 2" class="card-img-top">
-                            <div class="card-body">
-                                <h4 class="card-title">Reagan Lafnitzegger</h4>
-                                <h5>Class: Research Practicum Mentor</h5>
-                                <p class="card-text">Describe (in detail) the contributions that were made to the
-                                    project.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card about">
-                            <img src="img/man2.jpg" alt="Name 3" class="card-img-top">
-                            <div class="card-body">
-                                <h4 class="card-title">Craig Queenan</h4>
-                                <h5>Class: Research Practicum Mentor</h5>
-                                <p class="card-text">Describe (in detail) the contributions that were made to the
-                                    project.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card about">
-                            <img src="img/woman2.jpg" alt="Name 4" class="card-img-top">
-                            <div class="card-body">
-                                <h4 class="card-title">Dina Ellsworth</h4>
-                                <h5>Research Practicum Mentor</h5>
-                                <p class="card-text">Describe (in detail) the contributions that were made to the
-                                    project.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <!-- Collapsible Navbar menu with custom hover underline CSS animation -->
+            <div class="collapse navbar-collapse" id="navmenu">
+              <!--Links to hamburger menu-->
+              <ul class="navbar-nav ms-auto">
+                <!--ms-auto provides automatic margin spacing-->
+                <li class="nav-itm">
+                  <a
+                    href="authors.html"
+                    class="nav-link hover-underline-animation"
+                    >Authors</a
+                  >
+                </li>
+                <li class="nav-itm">
+                  <a
+                    href="procedure.html"
+                    class="nav-link hover-underline-animation"
+                    >Procedure</a
+                  >
+                </li>
+                <li class="nav-itm">
+                  <a
+                    href="results.html"
+                    class="nav-link hover-underline-animation"
+                    >Results</a
+                  >
+                </li>
+              </ul>
             </div>
-        </section>
+          </div>
+        </nav>
+      </header>
 
+      <!--About the team-->
+      <section class="authors">
+        <div class="container">
+          <br />
+          <!--Line break-->
+          <h1 class="text-center about-team">Authors and Acknowledgements</h1>
+          <p class="text-center">
+            <em
+              >Contributors to making this experiment possible from start to
+              end.</em
+            >
+          </p>
+          <hr />
+          <br />
+          <!--Horizontal and vertical line break-->
 
-        <!--Footer-->
-        <footer class="p-5 footer text-light text-center position-relative">
-            <div class="container">
-                <p class="lead credits">Copyright &copy; Research Practicum and Software Engineering, 2026</p>
-                <a href="#" class="position-absolute bottom-0 end-0 p-5">
-                    <i class="bi bi-arrow-up-circle h2 icon-white"></i>
-                </a>
+          <!--Cards organized in a 2x2 table format-->
+          <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+              <div class="card about">
+                <img
+                  src="img/arisha.jpg"
+                  alt="Arisha Islam"
+                  class="card-img-top"
+                />
+                <div class="card-body">
+                  <h4 class="card-title card-headings">Arisha Islam</h4>
+                  <h5 class="name">Research Practicum Student</h5>
+                  <ul class="card-text new-font">
+                    <li>
+                      Conducted all experimental processes in Research Labs 1
+                      and 2 of High Technology High School
+                    </li>
+                    <li>
+                      Conducted all data analysis in each of the experimental
+                      trials using Visual Studio Code
+                    </li>
+                    <li>
+                      Wrote a 25-page research paper on the effects that each
+                      treatment had on each trial
+                    </li>
+                    <li>Created an oral presentation on research</li>
+                    <li>Presented research at JSSF, DVSF, and NJAS</li>
+                  </ul>
+                </div>
+              </div>
             </div>
-        </footer>
+            <div class="col">
+              <div class="card about">
+                <img
+                  src="img/lafnitz.jpg"
+                  alt="Reagan Lafnitzegger"
+                  class="card-img-top"
+                />
+                <div class="card-body">
+                  <h4 class="card-title card-headings">Reagan Lafnitzegger</h4>
+                  <h5 class="name">Research Practicum Mentor</h5>
+                  <ul class="card-text new-font">
+                    <li>Consistently gave feedback on research paper weekly</li>
+                    <li>
+                      Gave guidance on research timeline and kept student
+                      research in check
+                    </li>
+                    <li>
+                      Reviwed full research timeline from 9th grade to 10th
+                      grade in Introduction to Research and Research Practicum
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card about">
+                <img
+                  src="img/queenan.jpg"
+                  alt="Craig Queenan"
+                  class="card-img-top"
+                />
+                <div class="card-body">
+                  <h4 class="card-title card-headings">Craig Queenan</h4>
+                  <h5 class="name">Research Practicum Mentor</h5>
+                  <ul class="card-text new-font">
+                    <li>
+                      Guided student through various research ideas and assisted
+                      on choosing final idea
+                    </li>
+                    <li>
+                      Assisted with defining variables and various parts of the
+                      experiment
+                    </li>
+                    <li>
+                      Gave advice on how to prepare for science fairs and
+                      academic discussion
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card about">
+                <img
+                  src="img/ellsworth.png"
+                  alt="Dina Ellsworth"
+                  class="card-img-top"
+                />
+                <div class="card-body">
+                  <h4 class="card-title card-headings">Dina Ellsworth</h4>
+                  <h5 class="name">Research Practicum Mentor</h5>
+                  <ul class="card-text new-font">
+                    <li>
+                      Guided student on organism care and research project
+                      management
+                    </li>
+                    <li>
+                      Provided feedback on research experiment processes and
+                      picking strong workflow
+                    </li>
+                    <li>
+                      Gave advice on how to prepare for science fairs and
+                      academic discussion
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col" style="margin-top: 5%">
+              <h2 class="text-center card-headings">
+                Institutions and Organizations
+              </h2>
+              <ul class="new-font">
+                <li>
+                  Monmouth County Vocational School District (MCVSD) Board of
+                  Education and Administration: Dr. Charles Ford and Mr. Sean
+                  Meehan, for permitting the research program to continue year
+                  after year
+                </li>
+                <li>
+                  High Technology High School (HTHS) Faculty and Administration:
+                  Ms. Teresa Hough, for her everlasting support of research
+                </li>
+                <li>
+                  HTHS Parent Faculty Association (PFA) for offering funds to
+                  the research program
+                </li>
+              </ul>
+            </div>
+            <div class="col" style="margin-top: 5%">
+              <h2 class="text-center card-headings">Student Body</h2>
+              <ul class="new-font">
+                <li>
+                  Mr. Lucas Brinster, for helping me with managing the writing
+                  of this paper
+                </li>
+                <li>
+                  Ms. Emily Kim, for training me in fruit fly care, fruit fly
+                  dissection, and miscellaneous research guidance
+                </li>
+                <li>
+                  Mr. Talin Sharma, for answering my questions and assisting
+                  with management of Visual Studio Code for data analysis
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
 
-
+      <!--Footer-->
+      <footer class="p-5 footer text-light text-center position-relative">
+        <div class="container">
+          <p class="lead credits">
+            Copyright &copy; Research Practicum and Software Engineering, 2026
+          </p>
+          <a href="#" class="position-absolute bottom-0 end-0 p-5">
+            <i class="bi bi-arrow-up-circle h2 icon-white"></i>
+          </a>
+        </div>
+      </footer>
     </div>
-
-</body>
-
+  </body>
 </html>

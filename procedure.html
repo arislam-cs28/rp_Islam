@@ -1,162 +1,269 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Activity 2.1.5 Class Demo</title>
 
     <!--CSS Links-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="img/ovary.png">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Trirong"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="img/ovary.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
     <!--JavaScript Links-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
-</head>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body class="body">
+  <body class="body">
     <div class="container-lg min-vh-100">
-        <header>
-            <!--Navigation Bar-->
-            <nav class="navbar navbar-expand-lg nav-background-color" data-bs-theme="dark">
-                <div class="container">
-                    <a href="index.html" class="navbar-brand"> <!-- Website Brand -->
-                        <img src="img/ovary.png" alt="Ovary logo" class="d-inline-block align-text-top w-50">
-                    </a>
+      <header>
+        <!--Navigation Bar-->
+        <nav
+          class="navbar navbar-expand-lg nav-background-color"
+          data-bs-theme="dark"
+        >
+          <div class="container">
+            <a href="index.html" class="navbar-brand">
+              <!-- Website Brand -->
+              <img
+                src="img/ovary.png"
+                alt="Ovary logo"
+                class="d-inline-block align-text-top w-50"
+              />
+            </a>
 
-                    <!--Hamburger Menu Button-->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+            <!--Hamburger Menu Button-->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navmenu"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
-                    <!-- Collapsible Navbar menu with custom hover underline CSS animation -->
-                    <div class="collapse navbar-collapse" id="navmenu"> <!--Links to hamburger menu-->
-                        <ul class="navbar-nav ms-auto"> <!--ms-auto provides automatic margin spacing-->
-                            <li class="nav-itm">
-                                <a href="authors.html" class="nav-link hover-underline-animation">Authors</a>
-                            </li>
-                            <li class="nav-itm">
-                                <a href="procedure.html" class="nav-link hover-underline-animation">Procedure</a>
-                            </li>
-                            <li class="nav-itm">
-                                <a href="results.html" class="nav-link hover-underline-animation">Results</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
-
-        <!--How to use the sensor!-->
-        <section class="procedure">
-            <div class="container">
-                <br>
-                <div class="text-center">
-                    <h1>Procedure</h1>
-                    <p><em>A deeper dive into the materials and methodology.</em></p>
-                    <h2 class="minimize"></h2>
-                </div>
-                <hr><br>
-
-                <table class="table table-hover text-center table-light table-bordered border-dark-subtle">
-                    <thead>
-                        <tr class="table-primary">
-                            <th>
-                                <h3>Step</h3>
-                            </th>
-                            <th>
-                                <h3>Description</h3>
-                            </th>
-                            <th>
-                                <h3>Image</h3>
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody class="table-group-divider">
-                        <!--Row 1-->
-                        <tr class="align-middle">
-                            <!--scope = "row" specifies the header cell is the header for a row-->
-                            <th scope="row" class="table-secondary">
-                                <h3>1</h3>
-                            </th>
-                            <td>
-                                <h3 class="howTo">Start Python Flask Server</h3>
-                            </td>
-                            <td class="text-center"><img src="img/python-logo.png" alt="Python Logo"></td>
-                        </tr>
-                        <!--Row 2-->
-                        <tr class="align-middle">
-                            <!--scope = "row" specifies the header cell is the header for a row-->
-                            <th scope="row" class="table-secondary">
-                                <h3>1</h3>
-                            </th>
-                            <td>
-                                <h3 class="howTo">Power circuit on. SR-04/05 transmits data to nano IoT</h3>
-                            </td>
-                            <td class="text-center"><img src="img/range-finder-tp.png" alt="SR04 Range Finder"></td>
-                        </tr>
-                        <!--Row 3-->
-                        <tr class="align-middle">
-                            <!--scope = "row" specifies the header cell is the header for a row-->
-                            <th scope="row" class="table-secondary">
-                                <h3>1</h3>
-                            </th>
-                            <td>
-                                <h3 class="howTo">Nano IoT connects to PC via WiFi and sends data to Arduino program
-                                </h3>
-                            </td>
-                            <td class="text-center"><img src="img/nano33-iot3.png" alt="Arduino nano"></td>
-                        </tr>
-                        <!--Row 4-->
-                        <tr class="align-middle">
-                            <!--scope = "row" specifies the header cell is the header for a row-->
-                            <th scope="row" class="table-secondary">
-                                <h3>1</h3>
-                            </th>
-                            <td>
-                                <h3 class="howTo">Arduino and Flask server communicate via HTTP request protocol</h3>
-                            </td>
-                            <td class="text-center"><img src="img/arduino-logo.png" alt="Arduino Logo"></td>
-                        </tr>
-                        <!--Row 5-->
-                        <tr class="align-middle">
-                            <!--scope = "row" specifies the header cell is the header for a row-->
-                            <th scope="row" class="table-secondary">
-                                <h3>1</h3>
-                            </th>
-                            <td>
-                                <h3 class="howTo">Flask connects to Firebase and sends data for storage</h3>
-                            </td>
-                            <td class="text-center"><img src="img/firebase-logo.png" alt="Firebase Logo"></td>
-                        </tr>
-                    </tbody>
-                </table>
+            <!-- Collapsible Navbar menu with custom hover underline CSS animation -->
+            <div class="collapse navbar-collapse" id="navmenu">
+              <!--Links to hamburger menu-->
+              <ul class="navbar-nav ms-auto">
+                <!--ms-auto provides automatic margin spacing-->
+                <li class="nav-itm">
+                  <a
+                    href="authors.html"
+                    class="nav-link hover-underline-animation"
+                    >Authors</a
+                  >
+                </li>
+                <li class="nav-itm">
+                  <a
+                    href="procedure.html"
+                    class="nav-link hover-underline-animation"
+                    >Procedure</a
+                  >
+                </li>
+                <li class="nav-itm">
+                  <a
+                    href="results.html"
+                    class="nav-link hover-underline-animation"
+                    >Results</a
+                  >
+                </li>
+              </ul>
             </div>
-        </section>
+          </div>
+        </nav>
+      </header>
 
+      <!--How to use the sensor!-->
+      <section class="procedure">
+        <div class="container">
+          <br />
+          <div class="text-center">
+            <h1>Procedure</h1>
+            <p><em>A deeper dive into the materials and methodology.</em></p>
+            <h2 class="minimize"></h2>
+          </div>
+          <hr />
+          <br />
 
-        <!--Footer-->
-        <footer class="p-5 footer text-light text-center position-relative">
-            <div class="container">
-                <p class="lead credits">Copyright &copy; Research Practicum and Software Engineering, 2026</p>
-                <a href="#" class="position-absolute bottom-0 end-0 p-5">
-                    <i class="bi bi-arrow-up-circle h2 icon-white"></i>
-                </a>
-            </div>
-        </footer>
+          <table
+            class="table table-hover text-center table-light table-bordered border-dark-subtle"
+          >
+            <thead>
+              <tr class="colored-back name">
+                <th>
+                  <h2>Step</h2>
+                </th>
+                <th>
+                  <h2>Description</h2>
+                </th>
+                <th>
+                  <h2>Image</h2>
+                </th>
+              </tr>
+            </thead>
+            <tbody class="table-group-divider">
+              <!--Row 1-->
+              <tr class="align-middle howTo">
+                <!--scope = "row" specifies the header cell is the header for a row-->
+                <th scope="row" class="table-secondary howTo">
+                  <h3>1</h3>
+                </th>
+                <td>
+                  <h3 class="howTo">Prepare each of the <em>Drosophila</em> vials</h3>
+                  <ul>
+                    <li>Leave culture of 50 pupae to rest until eclosion</li>
+                    <li>Mix 3.8 g of Formula 4-24 Instant Drosophila Blue Medium with 8 mL distilled water</li>
+                    <li>Deposit an even number of flies into each vial until you have 8 vials</li>
+                  </ul>
+                </td>
+                <td class="text-center">
+                  <img src="img/vial.png" alt="Drosophila vial" />
+                </td>
+              </tr>
+              <!--Row 2-->
+              <tr class="align-middle howTo">
+                <!--scope = "row" specifies the header cell is the header for a row-->
+                <th scope="row" class="table-secondary howTo">
+                  <h3>2</h3>
+                </th>
+                <td>
+                  <h3 class="howTo">
+                    Prepare plastic treatments for each experimental group
+                  </h3>
+                  <ul>
+                    <li>Blend 27.4 g of food-grade PVC sheet with 500 mL of water</li>
+                    <li>Blend 27.4 g of food-grade PVC sheet with 500 mL of water</li>
+                    <li>Dry and filter both microplastic blends with a 0.75 mm diameter hole sieve</li>
+                  </ul>
+                </td>
+                <td class="text-center">
+                  <img src="img/blender.png" alt="Blender for microplastics" />
+                </td>
+              </tr>
+              <!--Row 3-->
+              <tr class="align-middle howTo">
+                <!--scope = "row" specifies the header cell is the header for a row-->
+                <th scope="row" class="table-secondary howTo">
+                  <h3>3</h3>
+                </th>
+                <td>
+                  <h3 class="howTo">
+                    Prepare experimental group vials
+                  </h3>
+                  <ul>
+                    <li>In three of six vials, place in the powder of a single testosterone capsule for PCOS</li>
+                    <li>In two vials, one PCOS and one non-PCOS, place no plastic</li>
+                    <li>In two vials, one PCOS and one non-PCOS, place 1.5 g of PET</li>
+                    <li>In two vials, one PCOS and one non-PCOS, place 1.5 g of PVC</li>
+                    <li>Place 30 flies into each experimental vial</li>
+                  </ul>
+                </td>
+                <td class="text-center">
+                  <img src="img/setup.png" alt="Experimental group vial setup" />
+                </td>
+              </tr>
+              <!--Row 4-->
+              <tr class="align-middle howTo">
+                <!--scope = "row" specifies the header cell is the header for a row-->
+                <th scope="row" class="table-secondary">
+                  <h3>4</h3>
+                </th>
+                <td>
+                  <h3 class="howTo">
+                    Dissect experimental flies
+                  </h3>
+                  <ul>
+                    <li>Place a 6 in ruler on a stereomicroscope for scale</li>
+                    <li>Aneshtetize all flies, and place one on phosphate-buffered saline on the microscope stage</li>
+                    <li>Tug at the end of the Drosophila with fine-tip forceps until ovaries come out</li>
+                    <li>Photograph ovaries and repeat for all</li>
+                  </ul>
+                </td>
+                <td class="text-center">
+                  <img src="img/dissectioning.png" alt="Dissection experimental flies" />
+                </td>
+              </tr>
+              <!--Row 5-->
+              <tr class="align-middle howTo">
+                <!--scope = "row" specifies the header cell is the header for a row-->
+                <th scope="row" class="table-secondary">
+                  <h3>5</h3>
+                </th>
+                <td>
+                  <h3 class="howTo">
+                    Measure ovary sizes with ImageJ software
+                  </h3>
+                  <ul>
+                    <li>Place each image into the software</li>
+                    <li>Get the scale from the scale reference</li>
+                    <li>Measure the length, width, and upper surface area of each ovary</li>
+                  </ul>
+                </td>
+                <td class="text-center">
+                  <img src="img/imagej.png" alt="ImageJ software Logo" />
+                </td>
+              </tr>
+              <tr class="align-middle howTo">
+                <!--scope = "row" specifies the header cell is the header for a row-->
+                <th scope="row" class="table-secondary">
+                  <h3>6</h3>
+                </th>
+                <td>
+                  <h3 class="howTo">
+                    Conduct MANOVA data analyses with Python in VSCode
+                  </h3>
+                  <ul>
+                    <li>Using a Jupyter notevook, place all data into CSV files</li>
+                    <li>Import numpy, pandas, seaborn, and matplotlib.pyplot to take statistics</li>
+                    <li>Conduct MANOVA calculations, collect Pillai's trace, and graph with seaborn and matplotlib</li>
+                  </ul>
+                </td>
+                <td class="text-center">
+                  <img src="img/graph.png" alt="Ovary graph" />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
 
-
+      <!--Footer-->
+      <footer class="p-5 footer text-light text-center position-relative">
+        <div class="container">
+          <p class="lead credits">
+            Copyright &copy; Research Practicum and Software Engineering, 2026
+          </p>
+          <a href="#" class="position-absolute bottom-0 end-0 p-5">
+            <i class="bi bi-arrow-up-circle h2 icon-white"></i>
+          </a>
+        </div>
+      </footer>
     </div>
-
-</body>
-
+  </body>
 </html>
