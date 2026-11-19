@@ -5,7 +5,7 @@ Mean from:
 */
 
 async function getData(){
-    const response = await fetch('../data/research.csv');
+    const response = await fetch('data/research.csv');
     const data = await response.text();
     // console.log(data);
 
